@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="stylesheets.css"/>
+		<title>Register</title>
+		<link rel="icon" href="icon.ico"/>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<img src="header.png" />
+				<div class="menu">
+					<a href="index.html">Login</a>
+					<a href="register.html">Register</a>
+					<a href="report.html">Report</a>
+				</div>
+				<div class="menusub"></div>
+			</div>
+			<div id="body" class="bodyform">
+				<form name="Form1" action="index.html" method="post">
+					<div class="text"> Please enter the below details to register. </div>
+					<ul>
+						<li>
+							<label for="firstname">First Name :
+								</label>
+							<input type="text" name="firstname" placeholder="John" required=""/>
+						</li>
+						<li>
+							<label for="lastname">Last Name :
+								</label>
+							<input type="text" name="lastname" placeholder="Miller" required=""/>
+						</li>
+						<li>
+							<label for="email">Email :
+								</label>
+							<input type="email" name="email" placeholder="name@some.com" required=""/>
+						</li>
+						<li>
+							<label for="dob">Date of Birth :
+								</label>
+							<input type="date" name="dob" placeholder="" required=""/>
+						</li>
+						<li>
+							<label for="gender">Gender :
+								</label>
+							<select id="myList">
+								<option value="1">No Preference</option>
+								<option value="2">Male</option>
+								<option value="3">Female</option>
+							</select>
+						</li>
+						<li>
+							<input type="submit" value="Register"/>
+							<input type="reset" value="Cancel"/>
+						</li>
+					</ul>
+				</form>
+			
+			</div>
+			<div id="footer">
+				<p>Copyright (c) 2014 netpology.com All rights reserved.</p>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,264 @@
+
+/* Web layout styles */
+#container {
+	width: 100%;
+	background-color: beige;
+	padding: 0px;
+}
+
+#header {                        
+	height: 10%;
+	margin: 0px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: 0 top;
+}
+
+#leftnav {
+	margin-top: 5%;
+	width: 25%;
+	float: left;
+	background: cornsilk;
+	height: 80%;
+}
+
+#body {
+	margin-top: 5%;
+	margin-left: 25%;
+	height: 40%;
+}
+
+#footer {
+	clear:both;
+	height: 10%;
+	bottom: 0;
+	background: chocolate;
+	position: relative;
+	/*margin-top: 23%; */
+	width:100%;
+	padding-bottom: 2%;
+}
+
+#footer p {
+	text-align: center;	
+}
+
+/* menu styles */
+.menu {
+	text-align:left;
+	font-size:0;
+	height: 25%;    
+	position:relative;
+	top:1px; 
+	width:100%;
+}
+
+.menu a {	
+	display: inline-block;
+	margin-right: 5%;
+	background: ivory;
+	font: bolder 12px Aerial;
+	line-height: 24px;
+	border:2px solid #CAD0DB;
+	border-bottom:0;
+	color:black;
+	vertical-align:top;
+	text-decoration: blink;
+}
+
+.menu a:hover, .menu a.current {
+	background: dimgray;
+}
+
+.menusub {
+	height:6px;
+	border:1px solid #CAD0DB;
+	background:#E9ECF0;
+}
+
+/* body style is all the web pages */
+.bodyform {
+	margin-top: 5%;
+	width: 60%;
+	background-color: rgba(250,250,250,0.5);
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+    			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+    	border: 1px solid rgba(0, 0, 0, 0.3);
+    	text-align:center;
+}
+
+.bodyform .text {
+	color: green;
+}
+
+.bodyform .responsemessage {
+	color: lightblue;
+}
+
+.bodyform label {
+	text-align: right;
+	width: 30%;
+	height: 100%;
+	margin: 0;
+	float: left;
+	margin-right: 2%;
+	color: green;
+}
+
+.bodyform ul {
+	padding: 5%;
+	margin: 0;
+}
+
+.bodyform li {
+	float: center;
+	padding: 1%;
+}
+
+.bodyform input:not([type=submit], input[type=reset], textarea, input[type=date]) {
+	width: 70%;
+	height: 100%;
+	display: block;
+	float: left;
+	margin:auto;                        
+}
+
+.bodyform input[type=submit], input[type=reset] {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: #fff;
+	margin-right: 0;
+	border-radius: 10%;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Left navigation menus */
+#leftnav ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+
+#leftnav ul li.hover,
+#leftnav ul li:hover { 
+	position: relative; 
+	z-index: 599; 
+}
+
+#leftnav ul ul{
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 598;
+}
+
+#leftnav ul li:hover > ul { 
+	visibility: visible; 
+}
+
+#leftnav ul ul { 
+	top: 0; 
+	left: 100%;
+}
+
+#leftnav span, #leftnav a {
+	display: inline-block;
+	font: bolder 12px Aerial;
+	text-decoration: blink; 
+	color: black;
+}
+
+#leftnav li { 
+	background: ivory; 
+	border-bottom: 1px solid #CAD0DB;
+}
+
+#leftnav li:hover, #leftnav li.active {
+	background: dimgray; 
+}
+
+#leftnav a {
+	line-height: 160%;
+	padding: 16px 8px 16px 28px;
+   	 width: 164px; }
+
+#leftnav ul ul li {
+	background: ivory;
+	border-bottom: 1px solid #CAD0DB; 
+}
+
+#leftnav ul ul li:hover { 
+	background: dimgray; 
+}
+
+/* login page left and body styles */
+#loginleftnav {
+	margin-top: 5%;
+	width: 20%;
+	float: left;
+	background: cornsilk;
+	height: 80%;
+	padding: 2%;
+}
+
+.loginbodyform {
+	width: 70%;
+	background-color: rgba(250,250,250,0.5);
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+    			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+    	border: 1px solid rgba(0, 0, 0, 0.3);
+    	text-align:center;
+    	margin-top: 5%;
+    	float: right;
+    	height: 80%;
+}
+
+.loginbodyform svg{
+	height: 50%;
+}
+
+.loginform {
+	width: 100%;
+	background-color: rgba(250,250,250,0.5);
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+    			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+    	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 2%;
+}
+
+.loginform label {
+	color: #999;
+	margin: auto;
+	width:50%;
+	text-align: right;
+}
+
+.loginform ul {
+	padding: 0;
+	margin: 0;
+}
+
+.loginform li {
+	float: center;
+	padding: 1px;
+}
+
+.loginform input:not([type=submit], input[type=reset]) {
+	padding: 2px;
+	width:50%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5%;
+	float:right;
+}
+
+.loginform input[type=submit], input[type=reset] {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: #fff;
+	margin-right: 0;
+	border-radius: 10%;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
