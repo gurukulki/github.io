@@ -90,12 +90,11 @@
 }
 
 .bodyform .text {
-	color: chocolate;
+	color: green;
 }
 
 .bodyform .responsemessage {
-	color: darkgreen;
-	display: none;
+	color: lightblue;
 }
 
 .bodyform label {
@@ -105,7 +104,7 @@
 	margin: 0;
 	float: left;
 	margin-right: 2%;
-	color: chocolate;
+	color: green;
 }
 
 .bodyform ul {
@@ -215,11 +214,6 @@
     	margin-top: 5%;
     	float: right;
     	height: 80%;
-}
-
-.loginbodyform .responsemessage {
-	color: darkgreen;
-	display: none;
 }
 
 .loginbodyform svg{

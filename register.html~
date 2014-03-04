@@ -4,7 +4,6 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="stylesheets.css"/>
-		<script src="javascript.js" type="text/javascript"></script>
 		<title>Register</title>
 		<link rel="icon" href="icon.ico"/>
 	</head>
@@ -20,7 +19,7 @@
 				<div class="menusub"></div>
 			</div>
 			<div id="body" class="bodyform">
-				<form name="Form1" action="index.html?success=true" method="post">
+				<form name="Form1" action="index.html" method="post">
 					<div class="text"> Please enter the below details to register. </div>
 					<ul>
 						<li>
@@ -53,7 +52,7 @@
 							</select>
 						</li>
 						<li>
-							<input id="submit" type="submit" value="Register"/>
+							<input type="submit" value="Register"/>
 							<input type="reset" value="Cancel"/>
 						</li>
 					</ul>

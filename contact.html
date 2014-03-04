@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="stylesheets.css"/>
+		<script src="javascript.js" type="text/javascript"></script>
 		<title>Contact Us</title>
 		<link rel="icon" href="icon.ico"/>
 	</head>
@@ -86,28 +87,29 @@
 					</ul>
 				</div>
 				<div id="body" class="bodyform">
-					<form name="Form1" action="home.html" method="post">
+					<form name="Form1" action="contact.html?success=true" method="post">
+						<div id="response" class="responsemessage"> <p> Thank you for contacting us. </p> </div>
 						<div class="text"> Please enter the below details along with your comments. </div>
 					<ul>
 						<li>
 							<label for="firstname">First Name :
 								</label>
-								<input type="text" name="firstname" placeholder="John" required=""/>
+								<input type="text" id="firstname" placeholder="John" required=""/>
 							</li>
 							<li>
 								<label for="lastname">Last Name :
 								</label>
-								<input type="text" name="lastname" placeholder="Miller" required=""/>
+								<input type="text" id="lastname" placeholder="Miller" required=""/>
 							</li>
 							<li>
 								<label for="email">Email :
 								</label>
-								<input type="email" name="email" placeholder="name@some.com" required=""/>
+								<input type="email" id="email" placeholder="name@some.com" required=""/>
 							</li>
 							<li>
 								<label for="confirmemail">Confirm Email :
 								</label>
-								<input type="email" name="confirmemail" placeholder="" required=""/>
+								<input type="email" id="confirmemail" placeholder="" required=""/>
 							</li>
 							<li>
 								<label for="comment">Comments:
@@ -115,7 +117,7 @@
 								<textarea rows="4" cols="25" name="comment"></textarea>
 							</li>
 							<li>
-								<input type="submit" value="Submit"/>
+								<input id="submit" type="submit" value="Submit"/>
 								<input type="reset" value="Cancel"/>
 							</li>
 						</ul>
